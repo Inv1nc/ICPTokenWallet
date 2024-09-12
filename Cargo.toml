@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/token_wallet_backend"
+]
+resolver = "2"

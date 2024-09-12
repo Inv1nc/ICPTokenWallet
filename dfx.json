@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "token_wallet_backend": {
+      "candid": "src/token_wallet_backend/token_wallet_backend.did",
+      "package": "token_wallet_backend",
+      "type": "rust",
+	  "dependencies": ["icrc1_ledger_canister"]
+    },
+	"icrc1_ledger_canister": {
+            "type": "custom",
+            "candid": "ledger.did",
+            "wasm": "ic-icrc1-ledger.wasm.gz",
+            "specified_id": "mxzaz-hqaaa-aaaar-qaada-cai"
+        }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
